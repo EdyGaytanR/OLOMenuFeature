@@ -9,7 +9,7 @@
     console.log(url)
     let response = await fetch(url);
     main_div = $('#olo_menu')
-
+    loading = $('.spinner')
 
     type_dishes = await response.json();
     if (type_dishes.code == '500') {
