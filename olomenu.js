@@ -1,3 +1,7 @@
+/*!
+ * OLOMenuFeature v1.0.1
+ * https://github.com/EdyGaytanR/OLOMenuFeature
+ */
 (async function() {
     var dt = new Date();
 
