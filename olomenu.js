@@ -9,6 +9,7 @@
     console.log(url)
     let response = await fetch(url);
     main_div = $('#olo_menu')
+    loading = $('.spinner')
 
     type_dishes = await response.json();
     if (type_dishes.code == '500') {
@@ -20,7 +21,6 @@
                 heads = '<div class="menu_item"><div class="dish"><h3 class="title">' + type_dishes[type_dishes_counter].name + '</h3><h4 class="description">' + type_dishes[type_dishes_counter].description + '</h4></div></div>'
                 main_div.append(heads)
                 for (menu_item_counter = 0; menu_item_counter < type_dishes[type_dishes_counter].menuItems.length; menu_item_counter++) {
-                    console.log(type_dishes[type_dishes_counter].menuItems[menu_item_counter].price)
                     if (type_dishes[type_dishes_counter].menuItems[menu_item_counter].price != "" && type_dishes[type_dishes_counter].menuItems[menu_item_counter].price != "0") {
                         basic = '<div class="menu_item"><div class="basic_info"><p class="title">' + type_dishes[type_dishes_counter].menuItems[menu_item_counter].name + '</p><hr><p class="price">$' + type_dishes[type_dishes_counter].menuItems[menu_item_counter].price + '</p></div><p class="description">' + type_dishes[type_dishes_counter].menuItems[menu_item_counter].description + '</p></div>'
                         main_div.append(basic)
@@ -83,5 +83,7 @@
                 }
             }
         }
+        main_div.css('display', 'block')
+        loading.css('display', 'none')
     }
 })()
