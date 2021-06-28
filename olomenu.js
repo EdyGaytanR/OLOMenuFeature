@@ -39,7 +39,7 @@
                             main_div.append(basic)
                             for (modifiers_counter = 0; modifiers_counter < item_zero_price.modifiers[0].modifiers.length; modifiers_counter++) {
                                 if (item_zero_price.modifiers[0].modifiers[modifiers_counter].choiceListPrice != '0') {
-                                    modifers = '<div class="special_info"><div class="modifers"><div class="item"><p class="name">' + item_zero_price.modifiers[0].modifiers[modifiers_counter].name + '</p><hr>$<p class="price">' + item_zero_price.modifiers[0].modifiers[modifiers_counter].choiceListPrice + '</p></div></div></div>'
+                                    modifers = '<div class="special_info"><div class="modifers"><div class="item"><p class="name">' + item_zero_price.modifiers[0].modifiers[modifiers_counter].name + '</p><hr><p class="price">$' + item_zero_price.modifiers[0].modifiers[modifiers_counter].choiceListPrice + '</p></div></div></div>'
                                     main_div.append(modifers)
                                 } else {
                                     modifers = '<div class="special_info"><div class="modifers"><div class="item"><p class="name">' + item_zero_price.modifiers[0].modifiers[modifiers_counter].name + '</p></div></div></div>'
@@ -49,7 +49,7 @@
                             if (item_zero_price.modifiers[1]) {
                                 for (modifiers_counter = 0; modifiers_counter < item_zero_price.modifiers[1].modifiers.length; modifiers_counter++) {
                                     if (item_zero_price.modifiers[1].modifiers[modifiers_counter].choiceListPrice != '0') {
-                                        modifers = '<div class="special_info"><div class="modifers"><div class="item"><p class="name">' + item_zero_price.modifiers[1].modifiers[modifiers_counter].name + '</p><hr>$<p class="price">' + item_zero_price.modifiers[1].modifiers[modifiers_counter].choiceListPrice + '</p></div></div></div>'
+                                        modifers = '<div class="special_info"><div class="modifers"><div class="item"><p class="name">' + item_zero_price.modifiers[1].modifiers[modifiers_counter].name + '</p><hr><p class="price">$' + item_zero_price.modifiers[1].modifiers[modifiers_counter].choiceListPrice + '</p></div></div></div>'
                                         main_div.append(modifers)
                                     } else {
                                         modifers = '<div class="special_info"><div class="modifers"><div class="item"><p class="name">' + item_zero_price.modifiers[1].modifiers[modifiers_counter].name + '</p></div></div></div>'
