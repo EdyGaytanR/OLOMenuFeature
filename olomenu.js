@@ -1,5 +1,5 @@
 /*!
- * OLOMenuFeature v1.0.2
+ * OLOMenuFeature v1.0.3
  * https://github.com/EdyGaytanR/OLOMenuFeature
  */
 (async function() {
