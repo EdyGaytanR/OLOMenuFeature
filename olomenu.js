@@ -63,7 +63,7 @@
                             main_div.append(basic)
                             for (subitem_counter = 0; subitem_counter < item_zero_price.subItems[0].items.length; subitem_counter++) {
                                 if (item_zero_price.subItems[0].items[subitem_counter].price != '0') {
-                                    subitem = '<div class="special_info"><div class="subitem"><div class="item"><p class="name">' + item_zero_price.subItems[0].items[subitem_counter].name + '</p><hr>$<p class="price">' + item_zero_price.subItems[0].items[subitem_counter].price + '</p></div></div></div>'
+                                    subitem = '<div class="special_info"><div class="subitem"><div class="item"><p class="name">' + item_zero_price.subItems[0].items[subitem_counter].name + '</p><hr><p class="price">$' + item_zero_price.subItems[0].items[subitem_counter].price + '</p></div></div></div>'
                                     main_div.append(subitem)
                                 } else {
                                     subitem = '<div class="special_info"><div class="subitem"><div class="item"><p class="name">' + item_zero_price.subItems[0].items[subitem_counter].name + '</p></div></div></div>'
@@ -73,7 +73,7 @@
                             if (item_zero_price.subItems[1]) {
                                 for (subitem_counter = 0; subitem_counter < item_zero_price.subItems[1].items.length; subitem_counter++) {
                                     if (item_zero_price.subItems[1].items[subitem_counter].price != '0') {
-                                        subitem = '<div class="special_info"><div class="subitem"><div class="item"><p class="name">' + item_zero_price.subItems[1].items[subitem_counter].name + '</p><hr>$<p class="price">' + item_zero_price.subItems[1].items[subitem_counter].price + '</p></div></div></div>'
+                                        subitem = '<div class="special_info"><div class="subitem"><div class="item"><p class="name">' + item_zero_price.subItems[1].items[subitem_counter].name + '</p><hr><p class="price">$' + item_zero_price.subItems[1].items[subitem_counter].price + '</p></div></div></div>'
                                         main_div.append(subitem)
                                     } else {
                                         subitem = '<div class="special_info"><div class="subitem"><div class="item"><p class="name">' + item_zero_price.subItems[1].items[subitem_counter].name + '</p></div></div></div>'
