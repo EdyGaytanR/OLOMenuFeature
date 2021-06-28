@@ -1,5 +1,5 @@
 /*!
- * OLOMenuFeature v1.0.3
+ * OLOMenuFeature v1.0.4
  * https://github.com/EdyGaytanR/OLOMenuFeature
  */
 (async function() {
@@ -10,7 +10,7 @@
     day = dt.getDate().toString().padStart(2, "0");
     date = year + '-' + month + '-' + day
     let url = 'https://olo-api.spoton.com/api/emagine/merchants/' + id_merchant + '/menu-groups?includeMenuItems=true&orderDateTime=' + date + 'T10:22:25-05:00&orderTypeId=3uxw5e1y0vgz3dwi1we2ioj1lq';
-    //console.log(url)
+    console.log(url)
     let response = await fetch(url);
     main_div = $('#olo_menu')
     loading = $('.spinner')
